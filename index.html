@@ -12,8 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <!-- header -->
     <header>
       <nav class="">
         <div class="brand">
@@ -21,14 +26,267 @@
         </div>
         <p>SLATINDO</p>
       </nav>
-      <div class="item_header">
-        <p>About Us</p>
-        <p>Contact</p>
-        <div class="toggle">
+
+      <div class="item_header_container" id="menuContainer">
+        <div class="item_header_content">
+          <p>About Us</p>
+          <p>Contact</p>
+        </div>
+        <div class="item_contact">
+          <p>WeChat</p>
+          <p>Phone</p>
+          <p>Email</p>
+        </div>
+        <div class="toggle_1">
           <p>ENG</p>
           <span></span>
         </div>
       </div>
+
+      <div class="item_header_2">
+        <div class="toggle_2">
+          <p>ENG</p>
+          <span></span>
+        </div>
+        <div onclick="toggleMenu()" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
+
+    <!-- wraper -->
+    <div class="wraper">
+      <div class="wraper_img">
+        <p>Connecting Indonesia</p>
+        <p>to International</p>
+        <p>Timber Market</p>
+        <p>PT Slatindo Sukses Mandiri</p>
+      </div>
+    </div>
+
+    <!-- maps -->
+    <div class="map">
+      <div class="map_img">
+        <img src="./assets/maps.png" alt="" />
+      </div>
+      <p>
+        PT Slatindo Sukses Mandiri, which has been established since 2018 in the
+        city of Jakarta with material sources and workshops in Jambi
+      </p>
+    </div>
+
+    <!-- carousel -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img_carousel">
+            <img src="./assets/carousel1.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img_carousel">
+            <img src="./assets/carousel2.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img_carousel">
+            <img src="./assets/carousel3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- works -->
+    <p class="work_title">How does the production works?</p>
+    <div class="work">
+      <div class="work_content_left">
+        <div class="work_content_card">
+          <div class="work_content_card_img">
+            <img src="./assets/work_icon_1.png" alt="" />
+          </div>
+          <p class="work_content_card_desc">
+            We buy from the local people the harvested logs directly from the
+            source.
+          </p>
+          <p class="work_content_card_number">1</p>
+        </div>
+        <div class="work_content_card">
+          <div class="work_content_card_img">
+            <img src="./assets/work_icon_2.png" alt="" />
+          </div>
+          <p class="work_content_card_desc">
+            Logs are divided into blocks and processed on a scraping table to
+            create wooden slats.
+          </p>
+          <p class="work_content_card_number">2</p>
+        </div>
+        <div class="work_content_card">
+          <div class="work_content_card_img">
+            <img src="./assets/work_icon_3.png" alt="" />
+          </div>
+          <p class="work_content_card_desc">
+            This wet wood slat goes through a tapping process before exporting
+            to our customers, drying our wet wood slats in a wood drying furnace
+            service in Jakarta, to prevent blustin
+          </p>
+          <p class="work_content_card_number">3</p>
+        </div>
+        <div class="work_content_card">
+          <div class="work_content_card_img">
+            <img src="./assets/work_icon_4.png" alt="" />
+          </div>
+          <p class="work_content_card_desc">
+            Dry wooden slats are bundled in groups of three dozen, placed in
+            sacks, and stored in a Jakarta warehouse, where they await trucking
+            and inspection by Sucofindo officers.
+          </p>
+          <p class="work_content_card_number">4</p>
+        </div>
+      </div>
+      <div class="work_content_right">
+        <div class="work_content_right_img">
+          <img src="./assets/img_work.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact">
+      <div class="contact_left">
+        <p class="contact_left_title">Why Slatindo</p>
+        <div class="contact_left_content">
+          <div class="contact_left_content_card">
+            <div class="contact_left_content_card_img">
+              <img src="./assets/icon_user.png" alt="" />
+            </div>
+            <p class="contact_left_content_card_desc">
+              Have regular customers with long-term agreements
+            </p>
+          </div>
+          <div class="contact_left_content_card">
+            <div class="contact_left_content_card_img">
+              <img src="./assets/handyman.png" alt="" />
+            </div>
+            <p class="contact_left_content_card_desc">
+              Have regular customers with long-term agreements
+            </p>
+          </div>
+          <div class="contact_left_content_card">
+            <div class="contact_left_content_card_img">
+              <img src="./assets/trending_up.png" alt="" />
+            </div>
+            <p class="contact_left_content_card_desc">
+              Have regular customers with long-term agreements
+            </p>
+          </div>
+          <div class="contact_left_content_card">
+            <div class="contact_left_content_card_img">
+              <img src="./assets/editor_choice.png" alt="" />
+            </div>
+            <p class="contact_left_content_card_desc">
+              Have regular customers with long-term agreements
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contact_right">
+        <p class="contact_right_title">Let’s Connect</p>
+        <form class="form">
+          <input type="email" placeholder="email" />
+
+          <input type="text" placeholder="subject" />
+
+          <textarea placeholder="Type your message here... "></textarea>
+          <button>Send</button>
+          <p>or</p>
+          <div class="btn_contact">
+            <img src="./assets/chat.png" alt="" />
+            <p>Talk to us via WeChat</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer_brand">
+        <img src="./assets/icon.png" alt="" />
+        <p>SLATINDO</p>
+      </div>
+
+      <div class="footer_content">
+        <div class="footer_content_left">
+          <p>PT. Slatindo Sukses Mandiri</p>
+          <p>
+            Jl. Kapuk Kamal Raya No. 21, Cengklareng, Jakarta Utara, Indonesia
+          </p>
+        </div>
+        <div class="footer_content_mid">
+          <p>About Us</p>
+          <p>Contact</p>
+        </div>
+        <div class="footer_content_right">
+          <div class="footer_content_right_chat">
+            <img src="./assets/chat.png" />
+            <p>Talk to us via WeChat</p>
+          </div>
+          <div class="footer_content_right_call">
+            <img src="./assets/call.png" />
+            <p>+99999999999</p>
+          </div>
+          <div class="footer_content_right_email">
+            <img src="./assets/email.png" />
+            <p>lorem@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      })
+    </script>
+
+    <!-- <script>
+      swiper
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      slidesPerView: 2, // Jumlah gambar yang ditampilkan pada dekstop
+      breakpoints: {
+        768: {
+          slidesPerView: 2, // Jumlah gambar yang ditampilkan pada tablet
+        },
+        576: {
+          slidesPerView: 1.3, // Jumlah gambar yang ditampilkan pada mobile
+        },
+      },
+      })
+    </script> -->
   </body>
 </html>
